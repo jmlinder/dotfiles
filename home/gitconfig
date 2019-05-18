@@ -1,0 +1,23 @@
+[user]
+    name = Joseph Linder
+    email = joemlinder@gmail.com
+
+[github]
+    user = jmlinder
+
+[core]
+    attributesfile = ~/.gitattributes
+    autocrlf = false
+    excludesfile = ~/.gitignore
+    whitespace = cr-at-eol
+[diff "mdls"]
+    textconv = mdls
+[push]
+    default = current
+[alias]
+    br = branch
+    ca = commit -a
+    ci = commit
+    cm = commit -am
+    co = checkout
+    st = status --short --branch
