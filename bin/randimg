@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-URL=`sillycli image`
-
-echo $URL
-wget --quiet -O ~/Downloads/tmp "${URL}" && imgcat ~/Downloads/tmp

@@ -14,11 +14,7 @@ zstyle ':completion:*' list-colors ''
 # makes completion case-insensitive, and something about hyphens i don't know
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# only complete local git branches
-# WHY DOES THIS NOT WORK?!
-zstyle :completion::complete:git-checkout:argument-rest:headrefs command "git for-each-ref --format='%(refname)' refs/heads 2>/dev/null"
-
-fpath=(~/.dotkyl/completion /usr/local/share/zsh-completions $fpath)
+fpath=(~/dotfiles/completion /usr/local/share/zsh-completions $fpath)
 
 compinit
 
@@ -26,6 +22,3 @@ compinit
 # if [ $commands[kubectl] ]; then
 #   source <(kubectl completion zsh)
 # fi
-#
-
-source /Users/kyl/google-cloud-sdk/completion.zsh.inc

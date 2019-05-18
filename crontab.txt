@@ -1,12 +1,18 @@
-PATH=/usr/local/share/npm/bin:/usr/local/opt/coreutils/libexec/gnubin:~/.dotkyl/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.fzf/bin
+# * * * * *  command to execute
+# │ │ │ │ │
+# │ │ │ │ └─── day of week (0 - 6) (0 to 6 are Sunday to Saturday, or use names; 7 is Sunday, the same as 0)
+# │ │ │ └──────── month (1 - 12)
+# │ │ └───────────── day of month (1 - 31)
+# │ └────────────────── hour (0 - 23)
+# └─────────────────────── min (0 - 59)
+PATH=/Users/JoeLinder/Library/Python/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/Users/JoeLinder/Library/Python/3.7/bin
 
-45 17 * * 1-5 say -r 250 "Well I got five forty-five and its five forty-five"
-30 */4 * * * env LC_ALL='C' /usr/local/bin/gupdatedb 2>&1 | grep -v "Permission denied" | grep -vi keybase | grep -v "Operation not permitted"
-30 15 * * * /usr/local/bin/brew update
-55 15 * * * /usr/local/bin/brew outdated
-57 15 * * * /usr/local/bin/brew cask outdated
-15,45 * * * * env LC_ALL=en_US.UTF-8 urlwatch
-*/10 * * * * fetchwork > /dev/null 2>&1
-0 14 25 * * brew cleanup --prune=90
-
-# vim: ft=crontab
+0 * * * * /usr/local/bin/brew upgrade
+0 12 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/index.html s3://jmlinder.com
+0 12 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/main.css s3://jmlinder.com
+0 12 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/projects.html s3://jmlinder.com
+0 12 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/about.html s3://jmlinder.com
+0 19 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/index.html s3://jmlinder.com
+0 19 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/main.css s3://jmlinder.com
+0 19 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/projects.html s3://jmlinder.com
+0 19 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/about.html s3://jmlinder.com
