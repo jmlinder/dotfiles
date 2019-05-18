@@ -4,10 +4,11 @@ typeset -U path
 path=(
     $path
     /usr/local/sbin
+    /usr/local/bin
     /usr/local/opt/python/libexec/bin
     /usr/local/share/npm/bin
     ~/dotfiles/bin
-    /Applications/Visual Studio Code.app/Contents/Resources/app/bin
+    /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
     ~/.cargo/bin
 
 )
