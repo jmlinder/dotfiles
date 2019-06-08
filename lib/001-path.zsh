@@ -2,7 +2,6 @@ typeset -U path
 
 # $path is a magical variable from which $PATH is set
 path=(
-    $path
     /usr/local/sbin
     /usr/local/bin
     /usr/local/opt/python/libexec/bin
@@ -10,7 +9,7 @@ path=(
     ~/dotfiles/bin
     /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
     ~/.cargo/bin
-
+    $path
 )
 export PATH
 export GOPATH=~/go

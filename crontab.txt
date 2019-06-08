@@ -8,11 +8,3 @@
 PATH=/Users/JoeLinder/Library/Python/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/Users/JoeLinder/Library/Python/3.7/bin
 
 0 * * * * /usr/local/bin/brew upgrade
-0 12 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/index.html s3://jmlinder.com
-0 12 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/main.css s3://jmlinder.com
-0 12 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/projects.html s3://jmlinder.com
-0 12 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/about.html s3://jmlinder.com
-0 19 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/index.html s3://jmlinder.com
-0 19 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/main.css s3://jmlinder.com
-0 19 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/projects.html s3://jmlinder.com
-0 19 * * * aws s3 cp /Users/JoeLinder/desktop/coding/webdev/jmlinder/joe/about.html s3://jmlinder.com

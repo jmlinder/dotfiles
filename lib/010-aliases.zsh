@@ -1,7 +1,7 @@
 alias ll='lsd -Fal'
 alias ls='lsd -F'
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
-alias del="rm -rf"
+alias del="rmtrash"
 alias ce="virtualenv .venv"
 alias ae="source .venv/bin/activate"
 alias tree='tree -I "*.pyc|node_modules|__pycache__"'
@@ -9,6 +9,7 @@ alias flushdns='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder 
 alias history='fc -il 1'
 alias locate='glocate'
 alias updatedb="export LC_ALL='C' && sudo gupdatedb"
+alias unstage="git rm --cached -r"
 
 # things i just hate typing
 alias dc='docker-compose'
