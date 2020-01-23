@@ -8,7 +8,7 @@ if [[ "$PROFILE_STARTUP" == true ]]; then
     setopt xtrace prompt_subst
 fi
 
-export GREP_OPTIONS="-s --color=auto --exclude-dir=node_modules --exclude-dir=.env --exclude-dir=.git --exclude-dir=.svn --exclude-dir=.Trash --exclude-dir=.ropeproject"
+# export GREP_OPTIONS="-s --color=auto --exclude-dir=node_modules --exclude-dir=.env --exclude-dir=.git --exclude-dir=.svn --exclude-dir=.Trash --exclude-dir=.ropeproject"
 
 export LESS="-R"
 export LESSCHARSET="utf-8"
@@ -27,3 +27,8 @@ fi
 
 # added by travis gem
 [ -f /Users/JoeLinder/.travis/travis.sh ] && source /Users/JoeLinder/.travis/travis.sh
+
+# Linux - Wayland Support
+if [[ -z $DISPLAY && $(tty) == /dev/tty1 && $XDG_SESSION_TYPE == tty ]]; then
+  MOZ_ENABLE_WAYLAND=1 QT_QPA_PLATFORM=wayland XDG_SESSION_TYPE=wayland exec dbus-run-session gnome-session
+fi
