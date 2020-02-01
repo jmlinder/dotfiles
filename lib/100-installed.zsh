@@ -9,31 +9,37 @@ export EDITOR=/usr/bin/vim
 
 export GIT_PAGER='less -m -X --quit-at-eof'
 
-# MacOS
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# zsh autosuggestions
+# Mac
+if [ $(uname -s) = "Darwin" ]; then
+    source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Linux
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+else
+    source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 # https://github.com/zsh-users/zsh-syntax-highlighting/issues/411#issuecomment-317109904
 zle -N history-substring-search-up; zle -N history-substring-search-down
 
+# zsh syntax highlighting
 # MacOS
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ $(uname -s) = "Darwin" ]; then
+    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Linux
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 # must come after zsh-syntax-highlighting
-
+# zsh history substring search
 # MacOS
-# source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+if [ $(uname -s) = "Darwin"  ]; then
+    source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # Linux
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+else
+    source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+fi
 
-fuck() {
-    eval $(thefuck --alias)
-    fuck
-}

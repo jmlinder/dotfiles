@@ -1,0 +1,5 @@
+# Running NSight from the terminal
+nsight -vm /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+
+# Running nvvp fromt the terminal
+nvvp -vm /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java      

@@ -1,10 +1,10 @@
-# dotkyl
-
-
-my dotfiles (my initials are kyl)
-
+# dotfiles
 
 ## Contents
+
+### /tshoot
+
+Some scripts I've used to troubleshoot some things on linux.
 
 ### /bin
 
