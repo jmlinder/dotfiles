@@ -21,10 +21,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Update and install requirements
-apt update
-apt upgrade
-apt install zsh vim zsh-autosuggestions nordvpn neofetch zsh-syntax-highlighting git steam hfsprogs apt-transport-https ca-certificates curl gnupg-agent software-properties-common docker-ce docker-ce-cli containerd.io
+sudo apt update
+sudo apt upgrade
+sudo apt install qemu-kvm libvirt-bin bridge-utils virt-managerzsh vim zsh-autosuggestions nordvpn neofetch zsh-syntax-highlighting git steam hfsprogs apt-transport-https ca-certificates curl gnupg-agent software-properties-common docker-ce docker-ce-cli containerd.io
 
+sudo adduser $(USER) libvirtd
 # Git repos
 
 # zsh history substring
