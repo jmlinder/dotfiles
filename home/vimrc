@@ -8,7 +8,22 @@ call plug#begin()
 Plug 'sainnhe/edge'
 Plug 'vim-scripts/auto-pairs-gentle'
 Plug 'vim-airline/vim-airline'
+Plug 'sheerun/vim-polyglot'
+Plug 'preservim/nerdtree'
+Plug 'airblade/vim-gitgutter'
+Plug 'ekalinin/dockerfile.vim'
+Plug 'chr4/nginx.vim'
+Plug 'fatih/vim-go'
+Plug 'rust-lang/rust.vim'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-scripts/c.vim'
 call plug#end()
+
+" Plugin options
+let g:rustfmt_autosave = 1
+" ctrl+n to open NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
 "Syntax highlighting
 syntax on
