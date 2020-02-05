@@ -3,8 +3,6 @@
 # This is a bootstrap script I made to streamline the installation of common programs I use on Linux
 
 cd ~
-# Rust
-# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Docker install prep
 sudo apt-get update
@@ -17,21 +15,39 @@ sudo apt-get install \
     openssh-server
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
+
 # Docker
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
 
+# Docker-compose
+cd ~
+curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Rust
+cd ~
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Go (1.13.7)
+cd ~
+wget https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz
+rm -rf go1.13.7.linux-amd64.tar.gz
+sudo mv ./go /usr/local/
+
 # NordVPN
 cd ~
 wget -qnc https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
 sudo apt install ./nordvpn-release_1.0.0_all.deb
 rm -rf nordvpn-release_1.0.0_all.deb
-# Install docker-compose
+
+# Keybase
 cd ~
-curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
+sudo apt install ./keybase_amd64.deb
+rm -rf keybase_amd64.deb
 
 # Update and install requirements
 sudo apt update

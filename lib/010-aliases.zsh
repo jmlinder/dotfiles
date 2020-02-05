@@ -2,6 +2,7 @@ alias ll='lsd -Fal'
 alias ls='lsd -F'
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias del="rmtrash"
+alias ddel="rmdirtrash"
 alias ce="virtualenv .venv"
 alias ae="source .venv/bin/activate"
 alias tree='tree -I "*.pyc|node_modules|__pycache__"'
@@ -21,13 +22,13 @@ alias dice='rolldice -s'
 # alias enodenv='eval "$(nodenv init -)"'
 
 # Kubernetes commands
-# alias k='kubectl'
-# alias kc='kubectl config use-context'
-# alias kcc='kubectl config current-context'
-# alias kg='kubectl get'
-# alias kgp='kubectl get pods'
-# alias kl='kubectl logs'
-# alias klist="kubectl config view -o jsonpath='{.contexts[*].name}'"
+alias k='kubectl'
+alias kc='kubectl config use-context'
+alias kcc='kubectl config current-context'
+alias kg='kubectl get'
+alias kgp='kubectl get pods'
+alias kl='kubectl logs'
+alias klist="kubectl config view -o jsonpath='{.contexts[*].name}'"
 
-alias profile='code ~/.zshrc'
+
 alias tree='tree -I "*.pyc|node_modules|__pycache__"'
