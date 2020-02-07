@@ -37,6 +37,10 @@ wget https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz
 rm -rf go1.13.7.linux-amd64.tar.gz
 sudo mv ./go /usr/local/
 
+# Ansible
+sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+
 # NordVPN
 cd ~
 wget -qnc https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
