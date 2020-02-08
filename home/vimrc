@@ -18,10 +18,23 @@ Plug 'rust-lang/rust.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/c.vim'
+Plug 'scrooloose/syntastic'
+Plug 'valloric/youcompleteme'
 call plug#end()
 
-" Plugin options
+" Rust options
 let g:rustfmt_autosave = 1
+
+" Syntastic options
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " ctrl+n to open NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
