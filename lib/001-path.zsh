@@ -24,8 +24,10 @@ else
         /usr/share/npm/bin
         ~/dotfiles/bin
         ~/.cargo/bin
+        ~/.local/bin/
         $path
-    )
+    ) 
+    export PYTHONPATH="/usr/lib/python3:$PYTHONPATH"
 fi
 
 export PATH

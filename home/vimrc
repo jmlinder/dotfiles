@@ -58,7 +58,7 @@ set autoindent
 set textwidth=80
 
 " Mouse and Display
-set mouse=a
+set mouse=r
 set ttyfast
 set showcmd
 set showmode

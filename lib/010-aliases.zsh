@@ -5,6 +5,7 @@ alias del="rmtrash"
 alias ddel="rmdirtrash"
 alias ce="virtualenv .venv"
 alias ae="source .venv/bin/activate"
+alias de="deactivate"
 alias tree='tree -I "*.pyc|node_modules|__pycache__"'
 alias flushdns='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder && say "flushed DNS"'
 alias history='fc -il 1'
