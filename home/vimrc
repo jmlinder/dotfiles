@@ -1,4 +1,4 @@
-" Vim-plug
+"Vim-plug install
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -19,7 +19,6 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/c.vim'
 Plug 'scrooloose/syntastic'
-Plug 'valloric/youcompleteme'
 call plug#end()
 
 " Rust options
