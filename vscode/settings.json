@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, 'Hack Nerd Font'",
+    "python.envFile": "${workspaceFolder}/.venv"
+
+}

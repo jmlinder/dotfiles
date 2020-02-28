@@ -19,9 +19,8 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/c.vim'
 Plug 'scrooloose/syntastic'
-Plug 'davidhalter/jedi-vim'
+Plug 'valloric/youcompleteme'
 call plug#end()
-
 " Rust options
 let g:rustfmt_autosave = 1
 
@@ -56,7 +55,7 @@ set softtabstop=4
 set shiftwidth=4
 set autoindent
 set textwidth=80
-
+set backspace=indent,eol,start
 " Mouse and Display
 set mouse=r
 set ttyfast
