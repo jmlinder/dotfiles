@@ -1,5 +1,6 @@
-alias ll='lsd -Fal'
 alias ls='lsd -F'
+alias ll='lsd -Fl'
+alias lla='lsd -Fal'
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias del="rmtrash"
 alias ddel="rmdirtrash"
