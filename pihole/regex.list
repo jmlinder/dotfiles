@@ -1,0 +1,4 @@
+(^|\.)ru$
+(^|\.)cn$
+^(.+\.)?(facebook|fb(cdn|sbx)?|tfbnw)\.(co\.)?[^.]+$
+

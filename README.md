@@ -2,10 +2,6 @@
 
 ## Contents
 
-### /tshoot
-
-Some scripts I've used to troubleshoot some things on linux.
-
 ### /bin
 
 Half of these are from other people's gists or other uninstallable utils. The
@@ -44,6 +40,14 @@ vim-plug.
 If you looked at my init.vim, yeah I know, I have too many plugins. Half of
 them I don't even use. I'm a plugin hoarder. We could make a TV show about
 people like me.
+
+### /pihole
+
+My pihole configuration
+
+### /tshoot
+
+Some scripts I've used to troubleshoot some things on linux.
 
 ### crontab.txt
 
