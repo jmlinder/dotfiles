@@ -30,24 +30,17 @@ iTerm2 themes.
 Files that are sourced by `~/.zshrc`. Coolest thing in here is
 [`bookmark`](https://github.com/katylava/dotkyl/blob/master/lib/080-bookmarks.zsh).
 
-### /nvim
+### /linux
 
-Neovim configuration -- init.vim plus some custom syntax and colors. Also
-vim-plug.
+My linux configuration files (crontab, pip, apt, etc)
 
-`bin/setup-dotfiles` symlinks this directory to `~/.config/nvim`.
+### /mac
 
-If you looked at my init.vim, yeah I know, I have too many plugins. Half of
-them I don't even use. I'm a plugin hoarder. We could make a TV show about
-people like me.
+My mac configuration files (crontab, pip, apt, etc)
 
 ### /pihole
 
-My pihole configuration
-
-### /tshoot
-
-Some scripts I've used to troubleshoot some things on linux.
+My pihole configuration.
 
 ### crontab.txt
 

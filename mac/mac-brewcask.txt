@@ -1,0 +1,6 @@
+docker
+font-hack-nerd-font
+font-monoid-nerd-font
+font-spacemono-nerd-font
+iterm2
+phantomjs
